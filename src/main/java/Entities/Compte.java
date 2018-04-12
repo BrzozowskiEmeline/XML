@@ -2,16 +2,21 @@ package Entities;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)	
 public class Compte {
-	
-private Integer code;
-private float solde;
-private Date dateCreation;
 
-public Compte(Integer code, float solde, Date dateCreation) {
+	private Long code;
+	private float solde;
+	@XmlTransient
+	private Date dateCreation;
+
+public Compte(Long code, float solde, Date dateCreation) {
 	super();
 	this.code = code;
 	this.solde = solde;
@@ -22,11 +27,11 @@ public Compte() {
 	
 }
 
-public Integer getCode() {
+public Long getCode() {
 	return code;
 }
 
-public void setCode(Integer code) {
+public void setCode(Long code) {
 	this.code = code;
 }
 
