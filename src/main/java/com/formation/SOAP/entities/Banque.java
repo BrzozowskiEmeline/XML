@@ -1,4 +1,4 @@
-package Entities;
+package com.formation.SOAP.entities;
 
 import java.io.File;
 import java.io.IOException;

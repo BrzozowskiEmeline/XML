@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.04.11 à 04:54:32 PM CEST 
+// Généré le : 2018.04.11 à 04:47:53 PM CEST 
 //
 
 
@@ -31,7 +31,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Annuaire_QNAME = new QName("", "annuaire");
+    private final static QName _Compte_QNAME = new QName("", "compte");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: generated
@@ -41,20 +41,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Annuaire }
+     * Create an instance of {@link Compte }
      * 
      */
-    public Annuaire createAnnuaire() {
-        return new Annuaire();
+    public Compte createCompte() {
+        return new Compte();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Annuaire }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Compte }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "", name = "annuaire")
-    public JAXBElement<Annuaire> createAnnuaire(Annuaire value) {
-        return new JAXBElement<Annuaire>(_Annuaire_QNAME, Annuaire.class, null, value);
+    @XmlElementDecl(namespace = "", name = "compte")
+    public JAXBElement<Compte> createCompte(Compte value) {
+        return new JAXBElement<Compte>(_Compte_QNAME, Compte.class, null, value);
     }
 
 }

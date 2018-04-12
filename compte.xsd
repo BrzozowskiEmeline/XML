@@ -5,8 +5,7 @@
 
   <xs:complexType name="compte">
     <xs:sequence>
-      <xs:element name="code" type="xs:int" minOccurs="0"/>
-      <xs:element name="dateCreation" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="code" type="xs:long" minOccurs="0"/>
       <xs:element name="solde" type="xs:float"/>
     </xs:sequence>
   </xs:complexType>
